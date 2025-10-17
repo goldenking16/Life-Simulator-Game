@@ -1,0 +1,58 @@
+import type { Ailment } from '../types';
+
+export const AILMENTS: Ailment[] = [
+  {
+    id: 'common_cold',
+    name: 'Common Cold',
+    description: 'You have a runny nose and a cough.',
+    severity: 'minor',
+    treatmentCost: 20,
+    treatmentSuccessChance: 0.95,
+    untreatedConsequences: { healthChange: -1 },
+  },
+  {
+    id: 'influenza',
+    name: 'Influenza',
+    description: 'You are suffering from high fever, body aches, and a severe cough.',
+    severity: 'major',
+    treatmentCost: 100,
+    treatmentSuccessChance: 0.85,
+    untreatedConsequences: { healthChange: -3 },
+  },
+  {
+    id: 'sprained_ankle',
+    name: 'Sprained Ankle',
+    description: 'You twisted your ankle. It is swollen and painful.',
+    severity: 'minor',
+    treatmentCost: 150,
+    treatmentSuccessChance: 0.9,
+    untreatedConsequences: { healthChange: -1 },
+  },
+  {
+    id: 'food_poisoning',
+    name: 'Food Poisoning',
+    description: 'You feel nauseous and have a terrible stomach ache after eating something questionable.',
+    severity: 'major',
+    treatmentCost: 250,
+    treatmentSuccessChance: 0.8,
+    untreatedConsequences: { healthChange: -4 },
+  },
+    {
+    id: 'concussion',
+    name: 'Concussion',
+    description: 'You hit your head hard and are now experiencing dizziness and confusion.',
+    severity: 'major',
+    treatmentCost: 500,
+    treatmentSuccessChance: 0.75,
+    untreatedConsequences: { healthChange: -5 },
+  },
+  {
+    id: 'broken_arm',
+    name: 'Broken Arm',
+    description: 'A nasty fall resulted in a broken arm, now in a cast.',
+    severity: 'major',
+    treatmentCost: 1200,
+    treatmentSuccessChance: 0.98,
+    untreatedConsequences: { healthChange: -2 },
+  },
+];

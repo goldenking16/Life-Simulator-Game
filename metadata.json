@@ -1,0 +1,5 @@
+{
+  "name": "Life Simulator",
+  "description": "A text-based life simulator game where your choices shape your destiny. Start a new life or load a saved one and see what unfolds in this offline adventure.",
+  "requestFramePermissions": []
+}
